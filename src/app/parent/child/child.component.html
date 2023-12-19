@@ -1,0 +1,4 @@
+<h3>this is the Child Component data : {{para}}</h3>
+<input type="text" #box>
+
+<button (click)="updateChildDataEvent.emit(box.value)">Update Data</button>

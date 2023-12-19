@@ -1,0 +1,9 @@
+<h3>This is the Parent Component</h3>
+<app-child [para]="parentData"></app-child>
+<button (click)="updateChild()">Update</button>
+<br />
+<span><h4>Note:-</h4> We should pass maltipal data, </span>
+<br /><br />
+<h3>This is data send to child to parent</h3>
+<h1>{{childToParentData}}</h1>
+<app-child (updateChildDataEvent)="updateChildToParent($event)"></app-child>
